@@ -1,0 +1,9 @@
+STEPS TO RUN THE CODE IN VSCODE
+
+pip install requirements.txt
+streamlit run app.py
+
+- if you are getting error of keras then  follow before steps
+pip uninstall keras -y 
+pip install tf-keras
+streamlit run app.py
