@@ -102,7 +102,7 @@ st.markdown(
         -webkit-text-fill-color:transparent;
         margin-bottom:10px;
     ">
-        🚀 Enterprise Multi-Modal RAG Platform
+        🚀 Enterprise  RAG Platform
     </h1>
 
     <p style="
