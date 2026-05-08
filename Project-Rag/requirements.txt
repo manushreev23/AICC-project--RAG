@@ -1,0 +1,14 @@
+streamlit>=1.31.0
+pymupdf>=1.24.0
+sentence-transformers>=2.7.0
+faiss-cpu>=1.8.0
+python-pptx>=0.6.23
+sumy>=0.11.0
+nltk>=3.8.1
+numpy>=1.26.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+Pillow>=10.0.0
+scikit-learn>=1.3.0
+
+
