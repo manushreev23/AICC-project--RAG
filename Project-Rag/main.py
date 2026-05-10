@@ -3,7 +3,7 @@
 # ============================================================
 
 import streamlit as st
-
+from backend.chatbot.app import render_chatbot
 # PDF RAG
 from backend.pdf_rag.app import render_document_rag
 
@@ -102,7 +102,7 @@ st.markdown(
         -webkit-text-fill-color:transparent;
         margin-bottom:10px;
     ">
-        🚀 Enterprise RAG Platform
+        🚀AI-Powered Multi-Modal RAG System
     </h1>
 
     <p style="
@@ -123,12 +123,12 @@ st.markdown(
 # TABS
 # ============================================================
 
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+tab1, tab2, tab3, tab4,  tab6 = st.tabs([
     "💬 AI Chat",
     "📄 PDF Q&A",
     "🎥 YouTube Q&A",
     "🎤 Audio Q&A",
-    "📁 Documents",
+   # "📁 Documents",
     "📊 PPT Generator"
 ])
 
@@ -139,11 +139,9 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
 
 with tab1:
 
-    st.subheader("💬 AI Chat Assistant")
+   
 
-    st.info("General AI chatbot workspace")
-
-
+    render_chatbot()
 # ============================================================
 # TAB 2 - PDF RAG
 # ============================================================
@@ -169,9 +167,7 @@ with tab3:
 
 with tab4:
 
-    st.subheader("🎤 Audio File Q&A")
-
-    st.info("Audio transcription + RAG module")
+   
     render_audio_rag()
 
 
@@ -179,12 +175,11 @@ with tab4:
 # TAB 5 - DOCUMENTS
 # ============================================================
 
-with tab5:
+#with tab5:
 
-    st.subheader("📁 Document Workspace")
+ #   st.subheader("📁 Document Workspace")
 
-    st.info("Multi-document management system")
-
+   # st.info("Multi-document management system")
 
 # ============================================================
 # TAB 6 - PPT GENERATOR

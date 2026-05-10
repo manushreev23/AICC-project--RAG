@@ -78,10 +78,12 @@ def ask_pdf(vector_store, query):
     retriever = vector_store.as_retriever()
 
     # LLM (can later move outside if needed)
+    
     llm = ChatNVIDIA(
         model="openai/gpt-oss-120b",
         api_key=API_KEY
     )
+    
 
     prompt = PromptTemplate(
         input_variables=["context", "question"],

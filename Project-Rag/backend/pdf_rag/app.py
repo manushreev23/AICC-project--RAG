@@ -196,17 +196,11 @@ def render_document_rag():
 
         st.markdown(
             """
-            ✅ Multi-Document Parsing
+            ✅ Multi-Document Parsing            ✅ Recursive Chunking
 
-            ✅ Recursive Chunking
+            ✅ NVIDIA Embeddings            ✅ FAISS Vector Store
 
-            ✅ NVIDIA Embeddings
-
-            ✅ FAISS Vector Store
-
-            ✅ Semantic Retrieval
-
-            ✅ NVIDIA AI Responses
+            ✅ Semantic Retrieval            ✅ NVIDIA AI Responses
             """
         )
 
@@ -216,17 +210,11 @@ def render_document_rag():
 
         st.markdown(
             """
-            📄 PDF Documents
+            📄 PDF Documents            📝 DOCX Files
 
-            📝 DOCX Files
+            📃 TXT Files            📊 PPT / PPTX Files
 
-            📃 TXT Files
-
-            📊 PPT / PPTX Files
-
-            🔍 Semantic Search
-
-            💬 Persistent Chat
+            🔍 Semantic Search            💬 Persistent Chat
             """
         )
 

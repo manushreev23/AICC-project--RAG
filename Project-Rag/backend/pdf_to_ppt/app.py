@@ -65,7 +65,7 @@ def render_ppt_generator():
             font-weight: 800;
             background: linear-gradient(90deg,#60a5fa,#c084fc);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            
         }
 
         .ppt-subtitle {
@@ -129,6 +129,21 @@ def render_ppt_generator():
 
         st.markdown("<br>", unsafe_allow_html=True)
 
+        
+
+        go = st.button(
+            "🚀 Generate Presentation",
+            type="primary",
+            key="generate_btn",
+            use_container_width=True
+        )
+
+    # ============================================================
+    # RIGHT SIDE
+    # ============================================================
+
+    with right:
+        
         st.subheader("⚙️ PPT Settings")
 
         bullets_per_section = st.slider(
@@ -171,57 +186,12 @@ def render_ppt_generator():
 
         st.markdown("<br>", unsafe_allow_html=True)
 
-        go = st.button(
-            "🚀 Generate Presentation",
-            type="primary",
-            key="generate_btn",
-            use_container_width=True
-        )
+        
 
-    # ============================================================
-    # RIGHT SIDE
-    # ============================================================
 
-    with right:
 
-        st.subheader("🧠 RAG Pipeline")
-
-        st.markdown(
-            """
-            ✅ Extract PDF text + images
-
-            ✅ Filter TOC / headers / footers
-
-            ✅ Chunk & embed (MiniLM)
-
-            ✅ Retrieve via FAISS
-
-            ✅ Summarize using LexRank
-
-            ✅ AI PowerPoint Generation
-            """
-        )
-
-        st.markdown("<br>", unsafe_allow_html=True)
-
-        st.subheader("📈 Features")
-
-        st.markdown(
-            """
-            🔹 Topic-Focused Slides
-
-            🔹 AI Summarization
-
-            🔹 Automatic Bullet Points
-
-            🔹 Smart Image Integration
-
-            🔹 Downloadable PPTX
-
-            🔹 Research Presentation Ready
-            """
-        )
-
+       
+        
     # ============================================================
     # PIPELINE
     # ============================================================
